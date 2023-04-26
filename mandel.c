@@ -48,13 +48,13 @@ char *mandel(int maxIter) {
 }
 
 char pixel2rune(int n) {
-    if (0 <= n && n <= 10) return ' ';
-    if (11 <= n && n <= 20) return '.';
-    if (21 <= n && n <= 30) return '+';
-    if (31 <= n && n <= 40) return '=';
-    if (41 <= n && n <= 50) return '?';
-    if (51 <= n && n <= 60) return '#';
-    if (61 <= n && n <= 70) return ':';
+    if (n <= 10) return ' ';
+    if (n <= 20) return '.';
+    if (n <= 30) return '+';
+    if (n <= 40) return '=';
+    if (n <= 50) return '?';
+    if (n <= 60) return '#';
+    if (n <= 70) return ':';
     return '*';
 }
 
